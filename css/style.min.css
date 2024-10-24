@@ -617,7 +617,6 @@ pre code {
 .col-md-3,
 .col-md-4,
 .col-md-5,
-.col-md-6,
 .col-md-7,
 .col-md-8,
 .col-md-9,
@@ -1038,10 +1037,6 @@ pre code {
   .col-md-5 {
     flex: 0 0 41.66667%;
     max-width: 41.66667%;
-  }
-  .col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
   }
   .col-md-7 {
     flex: 0 0 58.33333%;
@@ -8860,4 +8855,15 @@ h6,
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.col-md-6 {
+  align-items: center;
+  text-align: center;
+  margin-left: 40%;
+}
+@media (max-width: 900px) {
+  .col-md-6{
+    margin-left: 30%;
+    margin-bottom: 20px;
+  }
 }

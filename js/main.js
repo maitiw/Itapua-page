@@ -68,3 +68,16 @@
     
 })(jQuery);
 
+
+
+
+
+
+const audio = document.getElementById("miAudio");
+					const duracionSpan = document.getElementById("duracion");
+
+					audio.onloadedmetadata = function() {
+						const duracionMinutos = Math.floor(audio.duration / 60);
+						const duracionSegundos = Math.floor(audio.duration % 60).toString().padStart(2, '0');
+						duracionSpan.textContent = `${duracionMinutos}:${duracionSegundos}`;
+					};
